@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+.grid {
+  grid-template-columns: repeat(19, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.block {
+  height: 100px;
+  width: 100px;
+  border: solid black 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.block-empty {
+  height: 100px;
+  width: 100px;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.reactive-nonmetals {
+  background-color: blue;
 }
-
-.App-link {
-  color: #61dafb;
+.noble-gases {
+  background-color: pink;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alkali-metals {
+  background-color: teal;
+}
+.alkaline-earth-metals {
+  background-color: red;
+}
+.metalloids {
+  background-color: yellow;
+}
+.post-transition-metals {
+  background-color: green;
+}
+.transition-metals {
+  background-color: purple;
+}
+.unknown-properties {
+  background-color: grey;
+}
+.lanthanides {
+  background-color: skyblue;
+}
+.actinides {
+  background-color: orange;
 }
