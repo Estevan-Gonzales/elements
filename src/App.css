@@ -5,18 +5,40 @@
   gap: 3px;
   width: 1900px;
   height: 1000px;
+  margin: 50px;
 }
 
 .block {
+  display: grid;
   border-radius: 5px;
-  font-size: xx-large;  
-  text-align: center;
-  padding-top: 25px;
 }
 
-.block:hover {
-  transform: scale(1.5);
+.element-name {
+  display: none;
+  font-size: small;
+  text-align: center;
+}
+
+.element-number {
+  justify-content: left;
+  font-size: large;
+  margin-left: 2px;
+}
+
+.element-symbol {
+  font-size: xxx-large; 
+  text-align: center;
+  margin-top: -20px;
+
+}
+
+.block:hover{
+  transform: scale(2);
   transition-duration: 300ms;
+}
+
+.block:hover .element-name {
+  display: block;
 }
 
 .block-empty {
